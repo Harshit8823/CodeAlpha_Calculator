@@ -1,0 +1,76 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  /*  background-image: linear-gradient( 45deg, #5D6D7E  , #808B96 );*/
+  background-image: radial-gradient( #34495E,#2E4053 );
+}
+
+.container{
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: 0px 0px 16px #F39C12;
+    background: transparent;
+    border-radius: 10%;
+}
+
+input{
+    height: 8vh;
+    width: 14vw;
+    border-radius: 13%;
+    background: lightgreen ;  
+    border: none;
+    font-size: 27px;    /* input box font size */
+    box-shadow: 0px -6px 20px lawngreen  ;   /* input box shadow setup */
+    text-align: right;
+    margin: 4px;
+}
+/* Input placeholder editor */
+input::placeholder{
+    color: black;
+}
+/* Collection of and it is the class of all Buttons which are used in calculator*/ 
+.button{
+    margin: 7px;
+}
+/* Main function of the button is uses here not the class... setting the button size border background color etc..*/
+button{
+    margin: 4px;
+    height: 40px;
+    width: 40px;
+    border-radius: 36%;
+    border: none;
+    background: transparent;
+    box-shadow: -2px -2px 11px;
+}
+/* When the cursor are going to the button then shadow activate and the shadow color is white and giving blur is 20px*/
+button:hover{
+    cursor: pointer;
+    box-shadow: -1px -2px 20px whitesmoke;
+}
+/* Giving the different look of Equal button using the class of equal*/
+.equal{
+    background-color: #F39C12;
+    font-size: 22px;
+}
+
+/*copied by google fonts*/
+/*<uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 400
+
+.playwrite-cu-<uniquifier>*/
+ .fontseries{
+  font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
